@@ -1,19 +1,43 @@
-#include<iostream>
-#include<string.h>
-#include<stdlib.h>
+#include <iostream>
+#include <vector>
+#include <stdlib.h>
 
 using namespace std;
-int main(){
-    char cajita_vacia[100];
-    char enamorado_dela_vida[100]="k sabe";
-    cout<<"Empieza la cancion ---> ";
-    cin>>cajita_vacia;
-    cin.ignore();
-    if ((strcmp(cajita_vacia,enamorado_dela_vida)==0))
+
+double multiplicar(int vec[], int tam);
+int createRandomNumber();
+
+int main()
+{
+    int tam;
+    double acum = 0;
+    cout << "Ingrese el tamaño del vector -> ";
+    cin >> tam;
+
+    int vectorA[tam];
+    cout << "\nVector A: " << endl;
+    for (int i = 0; i < tam; i++)
     {
-        cout<<"AQUEL K NUNKA AMOOO, LO TRISTE DE UNA DECEPCIOOONNN.";cout<<endl;
-        cout<<"SUFRIIIIR UN DESENGAÑOOOOOO ENAMORADO MAS K NUNKAAA DEL AMOR EQUIVOCADOOOO "<<endl;
+        vectorA[i] = createRandomNumber();
+        cout << vectorA[i] << " -> ";
     }
+
+    acum = multiplicar(vectorA, tam);
+    cout << "La multiplicacion es -> " << acum;
+
     cin.ignore().get();
-    return 0;
+}
+
+double multiplicar(int vec[], int size)
+{
+    if (size == 0)
+    {
+        return (vec[0]);
+    }
+    return (vec[size] * multiplicar(vec, size - 1));
+}
+
+int createRandomNumber()
+{
+    return rand() % 100 + 1;
 }

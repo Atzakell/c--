@@ -190,7 +190,6 @@ void menu()
     cout << "5.- Eliminar al Inicio" << endl;
     cout << "6.- Eliminar al Final" << endl;
     cout << "7.- Eliminar por Posicion" << endl;
-    cout << "8.- Buscar y Reemplazar" << endl;
     cout << "0.- Salir" << endl
          << endl;
 

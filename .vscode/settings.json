@@ -1,14 +1,16 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "new": "cpp",
-        "ostream": "cpp",
-        "*.tcc": "cpp",
-        "array": "cpp",
-        "string_view": "cpp",
-        "initializer_list": "cpp",
-        "utility": "cpp",
-        "istream": "cpp",
-        "streambuf": "cpp"
-    }
+  "files.associations": {
+    "iostream": "cpp",
+    "new": "cpp",
+    "ostream": "cpp",
+    "*.tcc": "cpp",
+    "array": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp",
+    "utility": "cpp",
+    "istream": "cpp",
+    "streambuf": "cpp",
+    "ctime": "cpp",
+    "random": "cpp"
+  }
 }

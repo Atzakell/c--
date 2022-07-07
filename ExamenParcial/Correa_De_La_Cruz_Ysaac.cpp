@@ -139,7 +139,6 @@ TpLista pop(TpLista &lista)
     }
     lista = lista->sgte;
     ptr->sgte = NULL;
-
     return ptr;
 }
 
@@ -150,7 +149,6 @@ void pushTraslado(TpLista &lista, TpLista ptr)
         ptr->sgte = lista;
     }
     lista = ptr;
-    ptr->sgte = lista;
 }
 void verListaCircular(TpLista lista)
 {

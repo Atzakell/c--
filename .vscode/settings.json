@@ -11,6 +11,7 @@
     "istream": "cpp",
     "streambuf": "cpp",
     "ctime": "cpp",
-    "random": "cpp"
+    "random": "cpp",
+    "iomanip": "cpp"
   }
 }
